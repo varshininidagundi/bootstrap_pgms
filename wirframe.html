@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="container bg-white pe-0 ps-0 ">
+        <!-- NAVBAR  -->
+        <nav class="navbar navbar-expand-sm bg-white border border-dark pt-0 pb-0 ms-0 me-0 w-100">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark border border-dark me-2 " href="#">Clock Time</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item d-flex align-items-end ms-auto">
+                        <a class="nav-link text-dark border border-dark bg-secondary " href="#">Search</a>
+                    </li>
+                    <li class="nav-item d-flex align-items-end ms-auto">
+                        <a class="nav-link text-dark border border-dark  bg-secondary" href="#">Log-In</a>
+                    </li>
+              </ul>
+        </nav>
+        <!--upper body-->
+             <div class="row ms-0 me-0 mt-1">
+                <div class=" col-lg-10 col-sm-10 col-xs-12 border border-dark">
+                    <div class="border border-dark mt-3" style="height: 185px;"></div><!--if we give height in h-75 error is coming-->
+                    <div class="d-flex justify-content-center align-items-center mt-2">
+                        <input type="radio" class="ms-2">
+                        <input type="radio" class="ms-2">
+                        <input type="radio" class="ms-2">
+                        <input type="radio" class="ms-2" checked=true>
+                    </div>
+                </div>
+                <div class=" col-lg-2 col-sm-2 col-xs-12 border border-dark ps-0 pe-0 d-flex flex-column justify-content-center">
+                    <div class="text-center bg-secondary ">Log In</div>
+                    <div class="d-flex flex-column overflow-x-visible justify-content-center align-items-center pt-2"  style="overflow-y:scroll; overflow-x:hidden">
+                            <div class="d-flex align-items-center"><input class=" mb-2 w-100" type="text" placeholder="USER ID"></div>
+                            <div class="d-flex align-items-center"><input class=" mb-2 w-100" type="password" placeholder="*********"></div>
+                            <div class=" d-flex align-items-center"><button class="text-center w-100 ">Log In</button></div>
+                            <div class="text-center">Or</div>
+                            <div class=" mx-auto"><button class="text-center w-100 ">Sign Up</button></div>
+                            <div class="text-center pt-2 pb-2">For Free!</div>
+                    </div>
+                </div> 
+            </div>
+        <!--lower body-->
+            <div class="row mt-2 ms-0 me-0">
+                <div class="col-lg-10 col-sm-10 col-xs-12">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-3 col-xs-12 border border-dark ps-0 pe-0 " style="overflow-y:scroll; overflow-x:hidden;">
+                            <div class="bg-secondary ps-2  z-index-1">Statistics</div>
+                            <div class="row ">
+                                <div class="col-8 ps-4">
+                                    <div class="fs-6 ">12345 Users</div>
+                                    <div class="fs-6 ">20000 Tests</div>
+                                    <div class="fs-6 ">40000 teststaken</div>
+                                    <div class="fs-6 ">17000 Topics</div>
+                                    <div class="fs-6 ">200 Subjects</div>
+                                    <div class="fs-6 ">(Similar Stats)</div>
+                                </div>
+                                <div class="col-4 h-100" style="overflow-y:scroll; overflow-x:hidden;">
+                                    <div class="badge rounded-pill bg-primary border border-dark text-dark fs-6 w-10 text-center position-absolute z-index-5 " style="margin-top: 5px ;">1</div>
+                                    <div class="badge rounded-pill bg-primary border border-dark text-dark fs-6 w-10 text-center position-absolute z-index-4 " style="margin-top: 25px;">1</div>
+                                    <div class="badge rounded-pill bg-primary border border-dark text-dark fs-6 w-10 text-center position-absolute z-index-3 " style="margin-top: 45px;">1</div>
+                                    <div class="badge rounded-pill bg-primary border border-dark text-dark fs-6 w-10 text-center position-absolute z-index-2 " style="margin-top: 67px;">1</div>
+                                    <div class="badge rounded-pill bg-primary border border-dark text-dark fs-6 w-10 text-center position-absolute z-index-1 " style="margin-top: 90px;">1</div>
+                                    <div class="badge rounded-pill bg-primary border border-dark text-dark fs-6 w-10 text-center position-absolute z-index-0 " style="margin-top: 110px;">1</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-sm-9 col-xs-12 ps-2 pe-2">
+                            <div class="border border-dark pb-1 ps-2">Featured Tests</div>
+                            <div class="border border-dark ps-0 pe-0 mt-2 container scroll-container" >
+                                <div class="bg-secondary ps-2  " >Plants and Herbs -- Biology Class VI</div>
+                                <div style="overflow-y: scroll; overflow-x: hidden; ">
+                                <div id="test0" class="ps-2 mt-1">Herbs and Plants -- Biology Class VI</div>
+                                <div id="test1" class="ps-2 mt-2">Plants and Herbs -- Biology Class VI</div>
+                                <div id="test2" class="ps-2 mt-2 pb-5">Plants and Herbs -- Biology Class VI</div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pb-0">
+                        <div class="col-lg-3 col-sm-3 col-xs-12 ps-0 pe-0">
+                            <div class="border border-dark p-1 ps-2 pb-1 mt-1 mb-1">Popular Tests</div>
+                            <div class="border border-dark  ">
+                                <div class="bg-secondary ps-2 ">The Mughal Empire</div>
+                                <div style="overflow-y:scroll; overflow-x:hidden;">
+                                    <div class="border border-dark  fw-bolder">|||||||||||||||||||||||||||||||||||||||||||||</div>
+                                    <div class="ps-2 pt-1">Plants and Herbs</div>
+                                    <div class="border border-dark pt-0 fw-bolder">|||||||||||||||||||||||||||||||</div>
+                                    <div class="ps-2 pt-1">Herbs and Plants</div>
+                                    <div class="border border-dark fw-bolder" style="padding-bottom: 1px;">|||||||||||||||</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-sm-9 col-xs-12 ps-2 ">
+                            <div class="border border-dark p-1 ps-2 pb-1 mt-1 mb-1">Recomended Tests</div>
+                            <div class="border border-dark ">
+                                <div class="bg-secondary ps-2 ms-0">The Mughal Empire</div>
+                                <div class="overflow-y-visible"  style="overflow-y:scroll; overflow-x:hidden;">
+                                    <div class="row ps-3 w-50 ">
+                                        <div class="col-1 badge rounded-pill border border-dark text-dark bg-primary fs-6 w-10 text-center ">1</div>
+                                        <div class="col-1 badge rounded-pill border border-dark text-dark bg-primary fs-6 w-10 text-center ">1</div>
+                                        <div class="col-1 badge rounded-pill border border-dark text-dark bg-primary fs-6 w-10 text-center ">1</div>
+                                    </div>
+                                    <div class="ps-2">Plants and Herbs</div>
+                                    <div class="row ps-3 w-50">
+                                        <div class="col-1 badge rounded-pill border border-dark text-dark bg-primary fs-6 w-10 text-center ">1</div>
+                                        <div class="col-1 badge rounded-pill border border-dark text-dark bg-primary fs-6 w-10 text-center ">1</div>
+                                    </div>
+                                    <div class="ps-2">Herbs and Plants</div>
+                                    <div class="row ps-3 w-50  ">
+                                        <div class="col-1 badge rounded-pill border border-dark bg-primary text-dark fs-6 w-10 text-center ">1</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-2 col-xs-12 border border-dark ps-0 pe-0" style="overflow-y: scroll; overflow-x: hidden;">
+                    <div  class="text-center bg-secondary mb-2 z-index-4">Ad Space</div>
+                </div>
+            </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
